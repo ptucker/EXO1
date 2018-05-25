@@ -1,6 +1,14 @@
 ﻿// EXO1_02.cpp : Defines the entry point for the console application.
 //if file is not compatible, copy program onto your version of C++ and remove "stdafx.h" and quotations around libraries
 
+//ex01_01: 20/20
+//ex01_02: 20/20
+//ex01_03: 16/20
+//ex01_04: 18/20
+//ex01_05: 20/20
+
+//TOTAL: 94/100
+
 //answer to video prompt about possitive and negative effects of software
 //negative: software gives us a facade to hide behind and gives us excuses to not physically meet with people
 //possitive: software connects the entire world and gives us means to communicate and share/access near-infinite information
@@ -18,6 +26,8 @@ h) processes applications for jobs, school admissions, etc.
 */
 
 #include "stdafx.h"
+//PT -- #include <iostream>
+// < > means something different to the compiler than ""
 #include "iostream"
 #include "ctime"
 #include "cstdlib"
@@ -117,6 +127,8 @@ void ex03()
 		cout << "No" << endl;
 
 	//c
+	//PT -- char tab = '\t';
+	// -2
 	char tab = 'Q';
 	cout << "\t" << tab << endl;
 	//instructions on this seemed a little foggy, but I did what I could
@@ -127,6 +139,8 @@ void ex03()
 	cin >> mailingAddress;
 
 	//e
+	//PT -- string emptyString = "";
+	// -2
 	string emptyString="Not So Empty";
 	cout << emptyString<<endl;
 }
@@ -136,6 +150,8 @@ void ex04()
 	cout << endl<<"ex04" << endl;
 	//a
 	int number;
+	//PT -- this will keep looping even when given a valid number (e.g. 7)
+	// -2
 	for (int i = 0; i != 1;)
 	{
 		cout << "Enter a value between 1 and 10: ";
@@ -164,6 +180,8 @@ void ex04()
 	cout << endl;
 
 	//d
+	//PT -- could increment by 2 here
+	// for (int i=0; i<40; i+=2)
 	for (int i = 0; i < 40; i++)
 	{
 		if (i % 2 == 0)
