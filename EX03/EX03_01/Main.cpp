@@ -29,6 +29,6 @@ int main() {
 	cout << "The radius is: " << Fan2.Radius << endl;
 	cout << "The speed is set to: " << Fan2.GetSpeed << endl;
 
-	cout << endl << "Press any key to continue..." << endl;	//these two lines are part of <cstdio>
+	cout << endl << "Press any key to continue..." << endl;	//these two lines are part of <cstdio> (mentioned at the top)
 	std::getchar();
 }
