@@ -12,7 +12,7 @@ private:		//The book asked for "accessor and mutator functions for all data fiel
 public:
 	bool On;	//did not include private bool because there are only two possible values already
 	double Radius;	//did not inlude a private Radius because it seemed that there was no set limit to it
-	int GetSpeed;
+	int GetSpeed=Speed;
 
 	Fan()
 	{
@@ -39,6 +39,7 @@ public:
 	{
 		if (NewSpeed >= 1 && NewSpeed <= 3)	//book example included "On" in all 'if statements' but problem 9.2 did wanted the fan to be off and have a speed of 2
 			Speed = NewSpeed;
+		GetSpeed=Speed;
 	}
 };
 
